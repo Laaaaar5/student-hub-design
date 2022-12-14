@@ -44,28 +44,43 @@ html {
 }
 
 .interface-section {
-  background-color: hotpink;
+  width: fit-content;
   display: flex;
   flex-direction: column;
+  gap: 15px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
 }
 
 .interface-text {
   background-color: ;
   margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.interface-text > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.interface-text > h2,
+.interface-text > p {
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .interface-search {
-  background-color: aqua;
   position: relative;
   width: 328px;
-}
-
-#search {
-  border: 1.75px solid #6a1cc3;
-  border-radius: 2px;
-  width: 100%;
 }
 
 .searchbar-logo {
@@ -80,30 +95,11 @@ html {
   pointer-events: none;
 }
 
-.dropdown-classes {
-}
-
-.dropdown-time-model {
-}
-
 .interface-dropdown {
   display: flex;
   gap: 5px;
   align-items: center;
   justify-content: center;
-}
-
-#classes-select,
-#time-model {
-  border: 2px solid #8849cf;
-  font-size: 14px;
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 600;
-  padding-block: 0.25rem;
-  padding-inline: 0.75rem 1.25rem;
-  background-color: ##e5e5e5;
-  color: #6a1cc3;
 }
 
 .dd-style {
@@ -141,6 +137,22 @@ html {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
   margin-left: 0;
+}
+
+.member-logo-bg {
+  width: 39px;
+  height: 39px;
+  background-color: #8849cf;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  border: 1.75px solid #6a1cc3;
+  border-radius: 2px;
+  width: 100%;
 }
 
 #dimitry,
@@ -183,12 +195,15 @@ html {
   color: #6a1cc3;
 }
 
-.member-logo-bg {
-  width: 39px;
-  height: 39px;
-  background-color: #8849cf;
-  border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#classes-select,
+#time-model {
+  border: 2px solid #8849cf;
+  font-size: 14px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem 1.25rem;
+  background-color: ##e5e5e5;
+  color: #6a1cc3;
 }
